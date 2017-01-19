@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="click_refresh">重新加载</string>
+    <string name="string_loading">正在加载...</string>
+    <string name="TxtApplicationCrash">程序异常，请稍后再试~</string>
+    <string name="network_is_disabled">网络不可用，请检查一下您的网络</string>
+
+
+</resources>

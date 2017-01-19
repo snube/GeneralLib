@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_base_progress_all_layout"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/load_base_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/base_progress"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/loading_process" />
+
+        <TextView
+            android:id="@+id/load_tishi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/base_progress"
+            android:layout_centerHorizontal="true"
+            android:text="@string/string_loading"
+            android:textSize="@dimen/sp_16" />
+
+
+    </RelativeLayout>
+
+
+    <!-- 没有数据提示的布局 -->
+    <ViewStub
+        android:id="@+id/viewstub_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout="@layout/base_no_data_layout" />
+
+</RelativeLayout>

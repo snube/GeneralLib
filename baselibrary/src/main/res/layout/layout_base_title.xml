@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:background="@color/default_red">
+
+    <TextView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="@dimen/dp_3"
+        android:gravity="center"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_3"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/top_fanhui_icon_bai"
+        android:drawablePadding="@dimen/dp_3"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:layout_marginRight="@dimen/dp_48"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxEms="16"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+
+</RelativeLayout>

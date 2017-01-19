@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_no_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/no_data_tishi_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jiazai_404_icon" />
+
+        <TextView
+            android:id="@+id/no_data_tishi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_data_tishi_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textColor="@color/text_font_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_data_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_data_tishi_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/bg_transparent_stroke_gray"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_14"
+            android:textColor="@color/text_font_gray"
+            android:paddingRight="@dimen/dp_18"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/click_refresh" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

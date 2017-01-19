@@ -1,0 +1,133 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- 自定义默认的ActionBar风格 -->
+        <!--<item name="android:actionBarStyle">@style/CustomActionBar</item>-->
+        <!--&lt;!&ndash; 消除actionbar的下阴影线 &ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--&lt;!&ndash; app背景&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@drawable/bg</item>-->
+        <!-- 悬浮ActionBar-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+        <!-- APP默认颜色-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/text_font_black</item>
+        <!-- APP默认字体大小-->
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:listDivider">@drawable/list_line_divider</item>
+    </style>
+
+
+    <!-- 自定义ActionBar主题-->
+    <style name="CustomActionBar" parent="android:Widget.Holo.Light.ActionBar">
+        <!-- actionBar的背景颜色-->
+        <item name="android:background">@color/default_red</item>
+        <item name="android:backgroundSplit">@color/transparent</item>
+        <item name="android:backgroundStacked">@color/transparent</item>
+    </style>
+
+    <!--全屏半透明样式-->
+    <style name="allScrnDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/translucence</item>
+    </style>
+
+    <!-- 可以避免启动时候的短暂黑屏的问题 -->
+    <style name="splash_style" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!--<item name="android:windowBackground">@drawable/splash</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 全屏透明样式-->
+    <style name="CustomDialogStyle" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+    </style>
+
+    <!-- Radiobutton样式-->
+    <style name="CustomRadioBtn">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- listview样式 -->
+    <style name="listview_style">
+        <item name="android:divider">@null</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="Normal_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="roundTextColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--弹窗进入的样式-->
+    <style name="WindowEnterDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 从顶部弹出dialog-->
+    <style name="WindowEnterDialogTopStyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_exit</item>
+    </style>
+
+    <!--进度条样式-->
+    <style name="ProgressBarStyle">
+        <item name="android:maxHeight">10dip</item>
+        <item name="android:minHeight">6dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar</item>
+    </style>
+
+</resources>
