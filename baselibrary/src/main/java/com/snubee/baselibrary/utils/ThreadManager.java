@@ -23,9 +23,6 @@ public final class ThreadManager {
     private static Handler mManinHandler;
     private static Object mMainHandlerLock = new Object();
 
-    // 本地改就行..不要传svn
-    public static final boolean DEBUG_THREAD = false;
-
     /**
      * AsyncTask的默认线程池Executor. 负责长时间的任务(网络访问) 默认3个线程
      */
@@ -83,9 +80,6 @@ public final class ThreadManager {
         return result;
     }
 
-    public static void init() {
-
-    }
 
     /**
      * 取得UI线程Handler
